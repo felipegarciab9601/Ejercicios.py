@@ -99,7 +99,7 @@ def run():
 
     while True:
         display_board(hidden_word, tries)
-        current_letter = str(input('Escoge una letra: '))
+        current_letter = str(rinput('Escoge una letra: '))
 
         letter_indexes = []
         for idx in range(len(word)):

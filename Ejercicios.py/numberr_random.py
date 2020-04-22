@@ -2,11 +2,13 @@ import random
 
 
 def run():
+    print("Hola!!! Bienvenido al juego de adivinar un numero /n Las reglas son sencillas")
+    number = int(input('Ingresa un numero cualquiera：'))
     number_found = False
-    random_number = random.randint(0, 20)
+    random_number = random.randint(0, number)
 
     while not number_found:
-        number = int(input('Intenta un número：'))
+        number = int(input('Intenta adivinar ahora el numero oculto!：'))
 
         if number == random_number:
             print('Felicidades. Encontraste el número')
